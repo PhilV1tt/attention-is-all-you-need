@@ -1,0 +1,17 @@
+            - name: Test notebooks with test-nb
+  # You may pin to the exact commit or the version.
+  # uses: AstraBert/test-nb-action@3b7f1ecfd26dfec585fa3b61b492b28e7c890134
+  uses: AstraBert/test-nb-action@v0.1.1
+  with:
+    directory: attention-is-all-you-need/
+    # Whether or not to activate verbose logging for test failures
+    verbose: # optional
+    # Whether or not to recursively look through the provided directory for notebook files
+    recursive: # optional
+    # Whether or not to overwrite existing python-converted files
+    overwrite: # optional, default is true
+    # Timeout (in seconds) for the execution of the tests
+    timeout: # optional, default is 3600
+    # Exclude environment variables hard-coded with os.environ
+    exclude_env: # optional
+          
